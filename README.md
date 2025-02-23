@@ -1,4 +1,11 @@
-#  Nginx for Node.js App
+#  Nginx for Node.js App 
+
+## What is Nginx?
+- 🌐 **Web Server & Proxy** – Nginx serves websites and acts as a reverse proxy, forwarding client requests to backend servers.  
+- 🚀 **High Performance** – It is lightweight, efficient, and optimized for handling high traffic with low resource usage.  
+- 🔄 **Load Balancing** – Distributes traffic across multiple servers to improve speed and reliability.  
+- 🔒 **Security Features** – Supports SSL/TLS encryption, access control, and DDoS protection.  
+- ⚡ **Scalability** – Used by large-scale applications like Netflix and GitHub to manage millions of requests.
 
 This project sets up an Nginx reverse proxy with load balancing for a Node.js web application. It includes Dockerization and securing the connection with a self-signed TLS certificate.
 
