@@ -15,14 +15,14 @@ This project sets up an Nginx reverse proxy with load balancing for a Node.js we
 ```sh
 sudo apt update && sudo apt install nginx -y
 ```
-<button onclick="navigator.clipboard.writeText('sudo apt update && sudo apt install nginx -y')">📋 Copy</button>
+<button onclick="navigator.clipboard.writeText('sudo apt update && sudo apt install nginx -y')"></button>
 
 ### 2️⃣ Clone the Repository
 ```sh
 git clone https://github.com/Devisrisamidurai/Nginx-node.js-app.git
 cd Nginx-node.js-app
 ```
-<button onclick="navigator.clipboard.writeText('git clone https://github.com/Devisrisamidurai/Nginx-node.js-app.git && cd Nginx-node.js-app')">📋 Copy</button>
+<button onclick="navigator.clipboard.writeText('git clone https://github.com/Devisrisamidurai/Nginx-node.js-app.git && cd Nginx-node.js-app')"></button>
 
 ### 3️⃣ Dockerize the Node.js Application 🐳
 Build and run the Node.js app inside Docker containers:
@@ -32,14 +32,14 @@ docker run -d -p 3001:3000 --name app1 node-app
 docker run -d -p 3002:3000 --name app2 node-app
 docker run -d -p 3003:3000 --name app3 node-app
 ```
-<button onclick="navigator.clipboard.writeText('docker build -t node-app . && docker run -d -p 3001:3000 --name app1 node-app && docker run -d -p 3002:3000 --name app2 node-app && docker run -d -p 3003:3000 --name app3 node-app')">📋 Copy</button>
+<button onclick="navigator.clipboard.writeText('docker build -t node-app . && docker run -d -p 3001:3000 --name app1 node-app && docker run -d -p 3002:3000 --name app2 node-app && docker run -d -p 3003:3000 --name app3 node-app')"></button>
 
 ### 4️⃣ Configure Nginx as Reverse Proxy with Load Balancing 🔄
 Edit the Nginx configuration file:
 ```sh
 sudo vi /etc/nginx/nginx.conf
 ```
-<button onclick="navigator.clipboard.writeText('sudo nano /etc/nginx/nginx.conf')">📋 Copy</button>
+<button onclick="navigator.clipboard.writeText('sudo nano /etc/nginx/nginx.conf')"></button>
 
 Paste the following configuration:
 ```nginx
@@ -87,7 +87,7 @@ Restart Nginx:
 ```sh
 sudo systemctl restart nginx
 ```
-<button onclick="navigator.clipboard.writeText('sudo systemctl restart nginx')">📋 Copy</button>
+<button onclick="navigator.clipboard.writeText('sudo systemctl restart nginx')"></button>
 
 ### 5️⃣ Secure Connection with Self-Signed TLS Certificate 🔐
 Create a directory for SSL certificates:
@@ -95,13 +95,13 @@ Create a directory for SSL certificates:
 sudo mkdir /etc/nginx/ssl
 cd /etc/nginx/ssl
 ```
-<button onclick="navigator.clipboard.writeText('sudo mkdir /etc/nginx/ssl && cd /etc/nginx/ssl')">📋 Copy</button>
+<button onclick="navigator.clipboard.writeText('sudo mkdir /etc/nginx/ssl && cd /etc/nginx/ssl')"></button>
 
 Generate a self-signed certificate:
 ```sh
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt
 ```
-<button onclick="navigator.clipboard.writeText('sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt')">📋 Copy</button>
+<button onclick="navigator.clipboard.writeText('sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt')"></button>
 
 Restart Nginx to apply changes:
 ```sh
